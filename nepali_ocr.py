@@ -350,14 +350,14 @@ def main():
 
                 with col1:
                     for i, img in enumerate(images):
-                        st.image(img, caption=f"Page {i + 1}", use_column_width=True)
+                        st.image(img, caption=f"Page {i + 1}", use_container_width=True)
             else:
                 text, processed_img = parser.parse_image(
                     uploaded_file, processing_params, cleaning_options
                 )
                 with col1:
                     if processed_img:
-                        st.image(processed_img, use_column_width=True)
+                        st.image(processed_img, use_container_width=True)
 
             with col2:
                 text_placeholder.text_area("Extracted Text", text, height=500)
