@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from PIL import Image
 import tempfile
-import os  # Import the os module
+import os
 
 from nepali_ocr import (
     remove_small_artifacts,
