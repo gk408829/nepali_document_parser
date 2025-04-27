@@ -14,7 +14,7 @@ class DocumentParser:
     A class for parsing documents (PDF and images) and extracting text using OCR,
     with preprocessing and cleaning capabilities.
     """
-    def __init__(self, tesseract_cmd):
+    def __init__(self):
         """
         Initializes the DocumentParser object.
 
