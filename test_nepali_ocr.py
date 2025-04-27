@@ -3,7 +3,6 @@ import numpy as np
 from PIL import Image
 import tempfile
 import os
-
 from nepali_ocr import (
     remove_small_artifacts,
     preprocess_image,
