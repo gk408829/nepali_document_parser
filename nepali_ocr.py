@@ -31,12 +31,9 @@ class DocumentParser:
     def __init__(self):
         """
         Initializes the DocumentParser object.
-
-        Args:
-            tesseract_cmd (str, optional): The path to the Tesseract OCR executable.
-                Defaults to '/opt/homebrew/bin/tesseract'.
         """
-        pytesseract.pytesseract.tesseract_cmd = '/opt/anaconda3/bin/tesseract'
+        pass
+
 
     def remove_small_artifacts(self, image, min_area=15):
         """
