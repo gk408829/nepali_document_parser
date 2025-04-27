@@ -9,6 +9,20 @@ from PIL import Image
 import io
 import re
 
+
+# --- Start of Tesseract path configuration ---
+try:
+    pytesseract.get_tesseract_version()
+except pytesseract.TesseractNotFoundError:
+    tesseract_path = '/usr/bin/tesseract'
+    if os.path.exists(tesseract_path):
+        pytesseract.pytesseract.tesseract_cmd = tesseract_path
+    else:
+        st.error("Tesseract is not installed or not in the system PATH. Please ensure it's installed correctly.")
+        st.stop()
+# --- End of Tesseract path configuration ---
+
+
 class DocumentParser:
     """
     A class for parsing documents (PDF and images) and extracting text using OCR,
