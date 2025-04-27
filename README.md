@@ -47,6 +47,10 @@ The Nepali Document Parser is a Python package designed to extract text from doc
     ```
 
 3.  **Install the Python dependencies:**
+
+    ```bash
+    brew install tesseract tesseract-lang
+    ```
     ```bash
     pip install streamlit pdf2image pytesseract opencv-python
     ```
