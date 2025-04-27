@@ -14,7 +14,7 @@ class DocumentParser:
     A class for parsing documents (PDF and images) and extracting text using OCR,
     with preprocessing and cleaning capabilities.
     """
-    def __init__(self, tesseract_cmd=r'/opt/homebrew/bin/tesseract'):
+    def __init__(self, tesseract_cmd):
         """
         Initializes the DocumentParser object.
 
@@ -22,7 +22,7 @@ class DocumentParser:
             tesseract_cmd (str, optional): The path to the Tesseract OCR executable.
                 Defaults to '/opt/homebrew/bin/tesseract'.
         """
-        pytesseract.pytesseract.tesseract_cmd = tesseract_cmd
+        pytesseract.pytesseract.tesseract_cmd = '/opt/anaconda3/bin/tesseract'
 
     def remove_small_artifacts(self, image, min_area=15):
         """
