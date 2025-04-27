@@ -1,6 +1,7 @@
 streamlit
 pytesseract
 pdf2image
+libgl1-mesa-glx
 opencv-python
 numpy
 Pillow
