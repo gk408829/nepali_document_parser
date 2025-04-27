@@ -125,6 +125,10 @@ To ensure the package is working correctly, you can run the included tests:
     pytest test_nepali_ocr.py
     ```
 
+# APP
+
+The app from Streamlit can be viewed here:
+https://gk408829-nepali-document-parser-nepali-ocr-frhxnm.streamlit.app/
 
 
 ## Dependencies
