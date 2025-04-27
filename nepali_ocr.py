@@ -14,7 +14,7 @@ import re
 try:
     pytesseract.get_tesseract_version()
 except pytesseract.TesseractNotFoundError:
-    tesseract_path = '/usr/bin/tesseract'
+    tesseract_path = '/opt/homebrew/bin/tesseract'
     if os.path.exists(tesseract_path):
         pytesseract.pytesseract.tesseract_cmd = tesseract_path
     else:
